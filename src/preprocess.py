@@ -1,10 +1,7 @@
 import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import StandardScaler, OneHotEncoder, OrdinalEncoder
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
+
 
 def load_and_preprocess(filePath):
 
@@ -65,7 +62,7 @@ def load_and_preprocess(filePath):
     'PreferredLoginDevice', 'PreferredPaymentMode',
     'Gender', 'PreferedOrderCat', 'MaritalStatus'
     ]
-    
+
     #dropping the churn column
     X = df.drop('Churn', axis=1)
     y = df['Churn']
