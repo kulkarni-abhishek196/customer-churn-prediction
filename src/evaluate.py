@@ -16,3 +16,11 @@ def evaluate_rf(rf, X_test, y_test):
     print(classification_report(y_test, y_pred))
     print("ROC-AUC: ", roc_auc_score(y_test, y_prob))
     print(confusion_matrix(y_test, y_pred))
+
+def evaluate_xgboost(xg, X_test, y_test):
+    y_pred = xg.predict(X_test)
+    y_prob = xg.predict_proba(X_test)[:,1]
+
+    print(classification_report(y_test, y_pred))
+    print("ROC-AUC: ", roc_auc_score(y_test, y_prob))
+    print(confusion_matrix(y_test, y_pred))
