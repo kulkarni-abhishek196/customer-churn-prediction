@@ -41,9 +41,10 @@ customer-churn-prediction/
 
 ## 5. Approach / Methodology
 
-EDA — correlation analysis, churn rate by category, class imbalance check
-Imputation — domain-informed fills (Tenure→0, DaySinceLastOrder→max, CouponUsed→0)
-Category merging — Phone/Mobile Phone, CC/Credit Card, Mobile/Mobile Phone
-Encoding — OHE for nominal categoricals, StandardScaler for numericals
-Pipeline — sklearn Pipeline + ColumnTransformer for clean preprocessing
-Models — Logistic Regression → Random Forest (GridSearchCV) → XGBoost
+* **EDA** — Correlation analysis, churn rate by category, class imbalance check
+* **Imputation** — Domain-informed fills (`Tenure → 0`, `DaySinceLastOrder → max`, `CouponUsed → 0`)
+* **Category merging** — Phone/Mobile Phone, CC/Credit Card, Mobile/Mobile Phone
+* **Encoding** — OHE for nominal categoricals, StandardScaler for numericals
+* **Pipeline** — `sklearn Pipeline` + `ColumnTransformer` for clean preprocessing
+* **Models** — Logistic Regression → Random Forest (`GridSearchCV`) → XGBoost
+
