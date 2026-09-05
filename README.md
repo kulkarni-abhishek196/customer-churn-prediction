@@ -54,7 +54,7 @@ customer-churn-prediction/
 | --------------------- | ------: | ----------------: | -------------------: | --------------: |
 | Logistic Regression   |    0.89 |              0.51 |                 0.72 |              93 |
 | Random Forest (Tuned) |    0.97 |              0.63 |                 0.90 |              70 |
-| XGBoost               |    0.98 |              0.78 |                 0.90 |              51 |
+| XGBoost               |    0.98 |              0.84 |                 0.90 |              51 |
 
 ## 7. Why Recall Over Accuracy
 
